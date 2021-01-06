@@ -15,5 +15,9 @@ def runCmd(cmd):
     return stdoutData.decode(), code, proc_id, stdoutErr
 
 
+def log_parser(output, reg_pattern=None):
+    pass
+
+
 if __name__ == "__main__":
     runCmd("print route")
