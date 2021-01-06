@@ -13,3 +13,7 @@ def runCmd(cmd):
     code, proc_id = proc.returncode, proc.pid
     stdoutData, stdoutErr = proc.communicate()
     return stdoutData.decode(), code, proc_id, stdoutErr
+
+
+if __name__ == "__main__":
+    runCmd("print route")
